@@ -1,8 +1,8 @@
 <?php
 $model = new Model();
-$user_id=$_POST['user_id'];
-$password=$_POST['password'];
-$result = $this->model->getlogin($user_id,$password); 
+$username=$_POST['username'];
+$pwd=$_POST['pwd'];
+$result = $this->model->getlogin($username,$pwd); 
 
 if($result == 'Done')
   {
