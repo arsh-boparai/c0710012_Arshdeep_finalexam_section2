@@ -24,7 +24,7 @@ mysqli_close($con);
 
 $con=mysqli_connect($servername, $username, $password, $dbname);
 
-$sql="select * from login2";
+$sql="select * from login";
 $result=mysqli_query($con,$sql);
 if($result->num_rows==0)
 {
