@@ -30,10 +30,7 @@ if($result->num_rows==0)
 {
 	$sql="insert into loginTable values (null,'admin','admin@123')";
 	$con->query($sql);
-	$sql="insert into loginTable values (null,'duttpatel','hellodutt')";
-	$con->query($sql);                   
-	$sql="insert into loginTable values (null,'jeetpatel','hellojeet')";
-	$con->query($sql);                   
+	                 
 	mysqli_close($con);  
 }
 ?>
