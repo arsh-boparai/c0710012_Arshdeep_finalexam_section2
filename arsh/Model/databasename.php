@@ -3,5 +3,5 @@ $con;
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "login2";
+$dbname = "finalexam";
 ?>
