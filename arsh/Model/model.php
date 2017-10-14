@@ -10,18 +10,18 @@ class Model {
   // here goes some hardcoded values to simulate the database
   if(isset($_REQUEST['username']) && isset($_REQUEST['password'])){
   
-  $user_id=$_REQUEST['username'];
-  $password=$_REQUEST['password'];
+  $username=$_REQUEST['username'];
+  $pwd=$_REQUEST['password'];
   
-  $con=mysqli_connect('localhost','root','','login2');
+  $con=mysqli_connect('localhost','root','','finalexam');
 
-$sql="select * from login";
+$sql="select * from loginTable";
 $result=mysqli_query($con,$sql);
 
 while($row=mysqli_fetch_assoc($result))
 {
   
-   if($user_id==$row['UserName'] && $password==$row['Password']){
+   if($username==$row['UserName'] && $pwd==$row['Password']){
     return 'login';
    }
                         else{
