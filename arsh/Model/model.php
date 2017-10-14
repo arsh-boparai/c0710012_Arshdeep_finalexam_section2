@@ -15,7 +15,7 @@ class Model {
   
   $con=mysqli_connect('localhost','root','','login2');
 
-$sql="select * from login2";
+$sql="select * from login";
 $result=mysqli_query($con,$sql);
 
 while($row=mysqli_fetch_assoc($result))
